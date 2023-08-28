@@ -1,0 +1,69 @@
+.containner {
+    .to_index {
+        width: 100%;
+        margin-top: 10px;
+        font-size: 16px;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 0 0 70px;
+        color: #1e80ff;
+        cursor: pointer;
+    }
+
+    .centerBox {
+
+        display: flex;
+        justify-content: center;
+
+        .articleDetail {
+            width: 700px;
+
+            .title {
+                font-size: 48px;
+                font-weight: 700;
+                text-align: center;
+                padding-bottom: 13px;
+            }
+
+            .authorTime {
+                font-size: 14px;
+                display: flex;
+                color: gray;
+                margin: 10px 0 10px 0;
+
+                .username {
+                    padding-right: 20px;
+                }
+
+            }
+
+            .content {
+                font-size: 16px;
+            }
+
+            .tags .tag {
+                margin-top: 20px;
+                display: inline-block;
+                background-color: gainsboro;
+                width: 60px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                border-radius: 5px;
+            }
+            .submit_result {
+                margin-top: 20px;
+                margin-left: 485px;
+                width: 100px;
+                height: 40px;
+                border: none;
+                border-radius: 5px;
+                background-color: #1e80ff;
+                color: white;
+                
+            }
+        }
+
+        
+    }
+}

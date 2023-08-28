@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>掘金后台管理系统</title>
+    <link rel="stylesheet" href="./public/sass/index.scss">
+</head>
+<body>
+    <div class="nav">
+        <span>掘金后台管理系统</span>
+        
+    </div>
+    <div class="management">
+        <div class="left">
+            <div class="article">文章管理</div>
+            <div class="comments">评论管理</div>
+        </div>
+        <div class="right">
+            <table class="article_Audit" >
+                <thead>
+                    <tr>
+                        <th>文章id</th>
+                        <th>文章名</th>
+                        <th>发布时间</th>
+                        <th>封面</th>
+                        <th>
+                            审核状态
+                        </th>
+                        <th>查看详情</th>
+                        <th>审核员id</th>
+                    </tr>
+                    
+                </thead>
+                <tbody class="article_tbody">
+                    <!-- <tr>
+                        <td class="article_id">文章id</td>
+                        <td class="article_name">文章名</td>
+                        <td class="abstract">文章摘要</td>
+                        <td class="publish_time">发布时间</td>
+                        <td class="coverurl">封面</td>
+                        <td class="audit_state">
+                            <span>未通过</span>
+                        </td>
+                        
+                        <td>
+                            <button class="article_preview" type="button">查看详情</button>
+                        </td>
+                        <td class="admin_id">审核员id</td>
+                    </tr> -->
+                </tbody>
+            </table>
+            <table class="comments_Audit" >
+                <thead>
+                    <tr>
+                        <th>评论id</th>
+                        <th>文章名</th>
+                        <th class="content">评论内容</th>
+                        <th>发布时间</th>
+                        <th>
+                            审核状态
+                        </th>
+                        <th>审核员id</th>
+                    </tr>
+                    
+                </thead>
+                <tbody class="comments_tbody">
+                    <!-- <tr>
+                        <td>评论id</td>
+                        <td>文章名</td>
+                        <td class="content">评论内容</td>
+                        <td>发布时间</td>
+                        <td>
+                            <button class="audit_state_del" type="button">删除</button>
+
+                        </td>
+                        <td>审核员id</td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script type="module" src="./src/ts/index.ts"></script>
+</body>
+</html>
