@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>稀土掘金</title>
+    <link rel="stylesheet" href="./public/sass/index.scss">
+</head>
+
+<body>
+    <div class="container">
+        <!-- 头部导航栏 -->
+        <div class="topnav">
+            <!-- 头部导航栏主体内容 -->
+            <div class="topnav-headers">
+                <div class="topnav-logobox">
+                    <a href="./index.html"><img
+                            src="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/e08da34488b114bd4c665ba2fa520a31.svg"
+                            class="logo-img"></a>
+                </div>
+                <div class="topnav-list">
+                    <div class="toplist-left">
+                        <div><a href="">首页</a></div>
+                        <div><a href="">沸点</a></div>
+                        <div><a href="">课程</a></div>
+                        <div><a href="">直播</a></div>
+                        <div><a href="">活动</a></div>
+                        <div><a href="">竞赛</a></div>
+                        <div><a href="">商城</a></div>
+                        <div><a href="">APP</a></div>
+                        <div><a href="">插件</a></div>
+                    </div>
+                    <div class="toplist-right">
+                        <div class="toplist-searchbox">
+                            <input type="text" class="search-input" value="探索稀土掘金">
+                            <div class="search-btn">
+                                <span class="iconfont icon-sousuo"></span>
+                            </div>
+                        </div>
+                        <div class="toplist-creatorCenterbox">
+                            <div class="creatorCenter">
+                                <button class="creatorCenterbtn">创作者中心</button>
+                            </div>
+                            <div class="toplist-more">
+                                <span class="iconfont icon-xiala"></span>
+                            </div>
+                        </div>
+                        <div class="toplist-vipbox">
+                            <div class="vipimg">
+                                <img src="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/24127194d5b158d7eaf8f09a256c5d01.svg"
+                                    class="vip-img">
+                            </div>
+                            <div class="vipwords">会员</div>
+                        </div>
+                        <!-- <div class="toplist-importantNoticebox">
+                            <span class="iconfont icon-xiaoxitixing"></span>
+                        </div> -->
+                        <img src="" alt="" class="headurl">
+                        <div class="toplist-userbox">
+                            <button class="loginbtn">登录|注册</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 登录窗口 -->
+        <div class="login_box">
+            <form>
+                <div class="login_head">
+                    <div class="login_title">登陆掘金畅享更多权益</div>
+                    <div class="close_form">X</div>
+                </div>
+                <div class="login_body">
+                    <div class="login_code_main">
+                        <h1>验证码注册</h1>
+                        <input type="text" placeholder="请输入手机号" name="register_tel">
+                        <input type="text" placeholder="请输入验证码" name="code">
+                        <input type="password" placeholder="请输入密码" name="register_password">
+                        <!-- button通过定位放到验证码输入框中-->
+                        <button class="get_code" type="button">获取验证码</button>
+                        <button class="login_btn login_register_btn" type="button">注册</button>
+                        <!-- 点击 切换登陆方式 切换表单 -->
+                        <span class="change_login change_password_login">密码登陆</span>
+                    </div>
+                    <!-- 密码登陆默认隐藏 -->
+                    <div class="login_password_main">
+                        <h1>密码登陆</h1>
+                        <input type="text" placeholder="请输入手机号" name="login_tel">
+                        <input type="password" placeholder="请输入密码" name="login_password">
+                        <button class="login_btn login_password_btn" type="button">登陆</button>
+
+                        <!-- 点击 切换登陆方式 切换表单 -->
+                        <span class="change_login change_code_login">验证码注册</span>
+                    </div>
+                    <!-- 扫码登录 -->
+                    <div class="login_scan ">
+                        <div class="scan_title">扫码登陆</div>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIAAQMAAADOtka5AAAABlBMVEX///8AAABVwtN+AAAEP0lEQVR42uydzbGrMAyFdScLlikhpVAalEYplMAyi0z0xtavbUgBj6NVhgvfSiPJ0pEvwWAwGAwGg8HO7cliu/xY6XUQ/XH905v+mNeZ+e1PHvr6GwAAWoD8nPenvvXi9+NLbEZUAA9mWsp3j2/+CgAAAlCca513mj5E9Uf1xIUFKX5XAZuzdwAAuAI8mcsfN/GyEtuYP3/1u4NqJKs/AADgN4Amed2fWEij11H+VNgEAACXAM2NNHHJe7NnxZ2KA5YnR31lqU+ukysA9wZ4tV7zXoltP3/8KPcBuDMgkWrcYn9r1wC2vY5JPzt+NxIAuDHgaUe6mgDDNyU3Siak6CiUkFbLdgAA6ABSmwdJinQq9Xstu4xd6q+CLD8aTwQAANJnlBNgjW3rbL6pKTEl0nL+AwCABkATc2p7r2ThyjtSxQE/yVv7JAkAAJHu2I59Zgvv9Ts97YkDyrBl6RsQAABA/p26W4lkzKmRuVohb+1zaVYBAEAH0ATosa0+kfGvjlako7na1M5bUwAA0IU0s/qdkyjkA6RFusQ2GmIiAHcHqM3ltKfhKs524omRP3Wgd9bRBODmAHm2emyzg6A0EhJS58BafwEAwBmA1ctU0KS1eX3dCjGRqLggBQAAGoCpBl6sHfE99b9dWaCRzFubRAAAsF1otiWklSLLZnSNVo6s/hpcGQAAfP4mEu/qZektbTuxCZomEYZ3U18AANBhnRTgIh+Q1tRiou+FxxkLAAD0AGsbxPhX2pZkJVUpu5rTXnQUAACgLbKS6LuqTohcKyc9cu9IuUQOAADmYdamnmjykzjkpT+FJw5jYwAAID/S6a6S5j3NjOm0FyZbmAAA0AiafHupkehqJCNpJGhHyr8DAIBzgK0oSZHFqt61NRRbbDKJygYAAD3ARiu+PRkleepIWf7kjy+IAwDAPkz/F5+xeP/S5sBJhikkuU4AAADG43+kO4tk2hGnGAgnO1PGAXB7gB3yml0BaW2KRM6b5aEjGM+NAACg3e4pD1LShrfuo8S9FAQAACOAmn04kQZIbjzSdQK688Qu4wUAgA5ApkPJqjddjDNlnOZGlYFzV60DAICJvuM6E9s1YR7KLj0IrmfbAwDcHkBZkOtJck2nPXZPnEy0+wYAAOqkthbJbDTnZ7vYsBRlk+TPoVoHAIDG3dj2cR8qaHLVSWpknpf7ANweYI1MF3S7stKUcar+1q7nOPUFAIBOa+k7u9+kjJPFgpQS9RYBAAC42h4gihsC4qYcvc20vTsHAAA6gN/4zu13c9xi4ncHmicOqnEAAPDtN7/yltv7cTdbnothXStkAQCAfON7UsaxtcZN2UTWUfAbuwEA4BLwNUGl/seAKdbBbR8uKwsAAIBOb3y3f31jZTv58qVkSxvoMQAADIC48d3V33HT0jcmw7F9slxdGQ/AjQEwGAwGg8Fg/5f9CwAA//8sAjRy9nbc8wAAAABJRU5ErkJggg=="
+                            alt="">
+                        <div class="open_app_scan">
+                            <div>打开
+                                <a href="https://juejin.cn/app">稀土掘金APP</a>
+                            </div>
+                            <div>点击"我-左上角扫一扫"登陆</div>
+                        </div>
+                    </div>
+                    <div class="protocol">注册登录即表示同意 <a href="#">用户协议</a> 和 <a href="#">隐私政策</a></div>
+                </div>
+            </form>
+        </div>
+        <!-- 主体内容 -->
+        <div class="main">
+            <div class="left">
+                <div>
+                    <span class="iconfont icon-wodeguanzhu"></span>
+                    <span><a href="./personal.html">关注</a></span>
+                </div>
+                <div>
+                    <span class="iconfont icon-zhinanzhen"></span>
+                    <span class="comprehensiveButton">综合</span>
+
+                </div>
+                <div>
+                    <span class="iconfont icon-diannaozhengji"></span>
+                    <span class="rearEndButton">后端</span>
+
+                </div>
+                <div>
+                    <span class="iconfont icon-program-full"></span>
+                    <span class="frontEndButton">前端</span>
+
+                </div>
+                <div>
+                    <span class="iconfont icon-anzhuo"></span>
+                    <span class="androidButton">Android</span>
+
+                </div>
+                <div>
+                    <span class="iconfont icon-pingguo"></span>
+                    <span class="iosButton">iOS</span>
+
+                </div>
+                <div>
+                    <span class="iconfont icon-jiqiren_o"></span>
+                    <span>人工智能</span>
+
+                </div>
+                <div>
+                    <span class="iconfont icon-jianxiu_filled"></span>
+                    <span>开发工具</span>
+
+                </div>
+                <div>
+                    <span class="iconfont icon-jisuanqi"></span>
+                    <span class="codeLifeButton">代码人生</span>
+                </div>
+                <div>
+                    <span class="iconfont icon-tushu"></span>
+                    <span>阅读</span>
+
+                </div>
+            </div>
+            <div class="center">
+                <div class="more">
+                    <div class="item">
+                        <div class="item_head">
+                            <span class="iconfont icon-wenzhang"></span>
+                            <span class="title_text">综合文章榜</span>
+                            <span class="and">更多></span>
+
+                        </div>
+                        <div class="item_body">
+                            <ul class="first_ul">
+                                <li>
+                                    <div>1</div>
+                                    <span>谈谈国内前端的三大怪啖</span>
+                                </li>
+                                <li>
+                                    <div>2</div>
+                                    <span>写给前端同学的Nginx配...</span>
+                                </li>
+                                <li>
+                                    <div>3</div>
+                                    <span>24岁 我裸辞啦😀</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item_head">
+                            <span class="iconfont icon-shuben-book4"></span>
+                            <span class="title_text">综合文章榜</span>
+                            <span>更多></span>
+                        </div>
+                        <div class="item_body">
+                            <ul class="second_ul">
+                                <li>
+                                    <div>1</div>
+                                    <span>谈谈国内前端的三大怪啖</span>
+                                </li>
+                                <li>
+                                    <div>2</div>
+                                    <span>写给前端同学的Nginx配...</span>
+                                </li>
+                                <li>
+                                    <div>3</div>
+                                    <span>24岁 我裸辞啦😀</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item_head">
+                            <span class="iconfont icon-shoucang"></span>
+                            <span class="title_text">综合文章榜</span>
+                            <span>更多></span>
+                        </div>
+                        <div class="item_body">
+                            <ul class="third_ul">
+                                <li>
+                                    <div>1</div>
+                                    <span>谈谈国内前端的三大怪啖</span>
+                                </li>
+                                <li>
+                                    <div>2</div>
+                                    <span>写给前端同学的Nginx配...</span>
+                                </li>
+                                <li>
+                                    <div>3</div>
+                                    <span>24岁 我裸辞啦😀</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="article_box">
+                    <div class="select">
+                        <span class="recommendNews">推荐</span>
+                        <span class="latestNews">最新</span>
+                    </div>
+                    <div class="article">
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="sign">
+                    <div class="first_line">
+                        <div class="text_box">
+                            <div class="title">上午好！</div>
+                            <div class="text">点亮在社区的每一天</div>
+                        </div>
+                        <button class="go_sign">去签到</button>
+                    </div>
+
+                </div>
+                <div class="photo_one"></div>
+                <div class="photo_two"></div>
+                <div class="download_app">
+                    <img src="	https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/juejin-qrcode.b3f37e7.png"
+                        alt="">
+                    <div class="app_text">
+                        <div>下载稀土掘金APP</div>
+                        <div>一个帮助开发者成长的社区</div>
+                    </div>
+
+                </div>
+                <div class="third_apk">
+                    <ul>
+                        <li>
+                            <img src="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/juejin.7948662.png"
+                                alt="">
+                            <span>稀土掘金漫游指南</span>
+                        </li>
+                        <li>
+                            <img src="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/extension.ab1ba29.png"
+                                alt="">
+                            <span>掘金浏览器插件</span>
+                        </li>
+                        <li>
+                            <img src="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/translation.01f4b92.png"
+                                alt="">
+                            <span>掘金翻译计划</span>
+                        </li>
+                        <li>
+                            <img src="	https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/weibo.e1fb82b.png"
+                                alt="">
+                            <span>官方微博</span>
+                        </li>
+                        <li>
+                            <img src="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/wechat.cf34f92.png"
+                                alt="">
+                            <span>微信公众号</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./src/ts/index.ts"></script>
+</body>
+
+</html>

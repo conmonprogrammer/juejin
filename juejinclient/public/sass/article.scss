@@ -1,0 +1,118 @@
+#editor—wrapper {
+    border: 1px solid #ccc;
+    z-index: 100;
+    /* 按需定义 */
+}
+
+@media screen and (max-width: 1200px) {
+    .articleInfo {
+        width: 1200px;
+    }
+}
+
+#toolbar-container {
+    border-bottom: 1px solid #ccc;
+}
+
+#editor-container {
+    height: 500px;
+}
+
+.articleInfo {
+    position: relative;
+
+    .headPart {
+        width: 800px;
+        display: flex;
+        justify-content: space-between;
+
+        .titleInput {
+            width: 724px;
+            height: 50px;
+            padding: 0 10px;
+            border: 0;
+            margin-bottom: 10px;
+        }
+
+    }
+
+    .rightnav {
+        position: absolute;
+        right: 40px;
+        top: 70px;
+        display: none;
+        z-index: 2;
+        width: 560px;
+        border: 1px solid #ddd;
+        background-color: #fff;
+
+
+        .textareBox {
+            display: flex;
+            justify-content: start;
+            margin: 10px;
+        }
+
+        .coverBox {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            margin: 10px;
+
+            .heading {
+                box-sizing: border-box;
+                width: 192px;
+                height: 128px;
+                background-color: #ccc;
+            }
+        }
+
+        .selectedBox {
+            display: flex;
+            justify-content: start;
+            margin: 10px;
+            height: 80px;
+            .tagName{
+                height: 30px;
+                margin-left: 5px;
+            }
+        }
+        .reconfirmBox{
+            border-top: 1px solid #ccc;
+            height: 72px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            .cancellationButton{
+                width: 90px;
+                border: 1px solid #1e80ff;
+                border-radius: 4px;
+                padding: 4px 0;
+                background-color: #fff;
+                color: #1e80ff;
+            }
+            .confirmReleaseButton{
+                width: 90px;
+                border: 1px solid #1e80ff;
+                border-radius: 4px;
+                padding: 4px 0;
+                background-color: #1e80ff;
+                color: #fff;
+            }
+        }
+
+    }
+
+    .publishArticleBtn {
+        width: 80px;
+        height: 40px;
+        position: absolute;
+        right: 40px;
+        top: 10px;
+        background-color: #1e80ff;
+        border: 1px solid #fff;
+        border-radius: 4px;
+        color: #fff;
+    }
+}

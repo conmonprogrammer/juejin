@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>article</title>
+    <link rel="stylesheet" href="./public/sass/article.scss">
+</head>
+
+<body>
+    <div class="articleInfo">
+        <div class="headPart">
+            <div class="inputPart">
+                <input type="text" placeholder="输入文章标题,不得超过30个字" class="titleInput">
+            </div>
+        </div>
+
+        <div class="rightnav">
+            <div class="textareBox">
+                <span>文章摘要：</span>
+                <textarea class="abstractInput" cols="50" rows="10" placeholder="摘要不得超过100个字"></textarea>
+            </div>
+
+            <div class="coverBox">
+                <label>封面上传:(可选)</label>
+                <input type="file" accept="image/*" id="coverupload" hidden>
+                <label for="coverupload">
+                    <img class="heading">
+                </label>
+                <label>建议尺寸：192*128px,封面仅展示在首页信息流中</label>
+            </div>
+
+            <div class="selectedBox">
+                <span>分类标签:</span>
+                <select class="tagName">
+                    <option value="1">前端</option>
+                    <option value="2">后端</option>
+                    <option value="3">Android</option>
+                    <option value="4">IOS</option>
+                    <option value="5">代码人生</option>
+                </select>
+            </div>
+            <div class="reconfirmBox">
+                <button class="cancellationButton">取消</button>
+                <button class="confirmReleaseButton">确定并发布</button>
+            </div>
+        </div>
+
+        <div id="editor—wrapper">
+            <div id="toolbar-container"><!-- 工具栏 --></div>
+            <div id="editor-container"><!-- 编辑器 --></div>
+        </div>
+        <button class="publishArticleBtn">发布</button>
+    </div>
+
+    <script type="module" src="./src/ts/article.ts"></script>
+</body>
+
+</html>

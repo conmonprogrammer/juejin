@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人资料-掘金</title>
+    <link rel="stylesheet" href="./public/sass/personalDetail.scss">
+</head>
+
+<body>
+    <div class="topnav">
+        <!-- 头部导航栏主体内容 -->
+        <div class="topnav-headers">
+            <div class="topnav-logobox">
+                <a href="./index.html"><img
+                        src="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/e08da34488b114bd4c665ba2fa520a31.svg"
+                        class="logo-img"></a>
+            </div>
+            <div class="topnav-list">
+                <div class="toplist-left">
+                    <div><a href="">首页</a></div>
+                    <div><a href="">沸点</a></div>
+                    <div><a href="">课程</a></div>
+                    <div><a href="">直播</a></div>
+                    <div><a href="">活动</a></div>
+                    <div><a href="">竞赛</a></div>
+                    <div><a href="">商城</a></div>
+                    <div><a href="">APP</a></div>
+                    <div><a href="">插件</a></div>
+                </div>
+                <div class="toplist-right">
+                    <div class="toplist-searchbox">
+                        <input type="text" class="search-input" value="探索稀土掘金">
+                        <div class="search-btn">
+                            <span class="iconfont icon-sousuo"></span>
+                        </div>
+                    </div>
+                    <div class="toplist-creatorCenterbox">
+                        <div class="creatorCenter">
+                            <button class="creatorCenterbtn">创作者中心</button>
+                        </div>
+                        <div class="toplist-more">
+                            <span class="iconfont icon-xiala"></span>
+                        </div>
+                    </div>
+                    <div class="toplist-vipbox">
+                        <div class="vipimg">
+                            <img src="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/24127194d5b158d7eaf8f09a256c5d01.svg"
+                                class="vip-img">
+                        </div>
+                        <div class="vipwords">会员</div>
+                    </div>
+                    <!-- <div class="toplist-importantNoticebox">
+                        <span class="iconfont icon-xiaoxitixing"></span>
+                    </div> -->
+                    <img src="" alt="" class="headurl">
+                    <div class="toplist-userbox">
+                        <button class="loginbtn">登录|注册</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="return_index">
+        <a href="index.html" class="return_index_a">&lt;返回个人主页</a>
+    </div>
+    <div class="personal_data">
+        <div class="left">
+            <div class="user_data"><span class="iconfont icon-shenfenzhengkapian"></span>个人资料</div>
+            <div><span class="iconfont icon-touxiang"></span>账号设置</div>
+            <div><span class="iconfont icon-shezhixitongshezhigongnengshezhishuxing"></span>通用设置</div>
+            <div><span class="iconfont icon-xiaoxi"></span>消息设置</div>
+            <div class="show_pingbi"><span class="iconfont icon-show_pingbi_full"></span>屏蔽管理</div>
+            <div class="show_tags"><span class="iconfont icon-24gf-tags"></span>标签管理</div>
+        </div>
+        <div class="personal_info">
+            <div class="personal_data_info">
+                <div class="title">个人资料</div>
+                <div class="form_info">
+                    <div class="info_left">
+                        <form>
+                            <div><span class="info_user_deta">用户名&nbsp;&nbsp;</span>
+                                <input type="text" class="user_name">
+                            </div>
+                            <div class="info_tel"><span class="info_user_deta">手机号&nbsp;&nbsp;</span>
+                                <input type="text" placeholder="19191919191" readonly class="user_tel">
+                            </div>
+                            <div>
+                                <span class="info_user_deta">职&nbsp;&nbsp;位&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <input type="text" placeholder="填写你的职位" class="user_job">
+                            </div>
+                            <div>
+                                <span class="info_user_deta">公&nbsp;&nbsp;司&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <input type="text" placeholder="填写你的公司" class="user_company">
+                            </div>
+
+                            <div class="info_introduce_box">
+                                <span class="info_introduce info_user_deta">个人介绍</span>
+                                <input name="" id="" placeholder="填写职业技能、擅长的事情、喜欢的事情等" class="user_introduction">
+                            </div>
+                            <button type="button" class="user_info_btn">保存修改</button>
+                        </form>
+                    </div>
+                    <div class="right">
+                        <input type="file" hidden id="user_headimg" accept="image/*">
+                        <label for="user_headimg">
+                            <img src="	https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/58aaf1326ac763d8a1054056f3b7f2ef.svg"
+                                alt="" class="myheadimg">
+                        </label>
+
+                        <div class="right_title">我的头像</div>
+                        <div class="right_explain">支持 jpg、png、jpeg 格式大小 5M 以内的图片</div>
+                    </div>
+                </div>
+            </div>
+            <div class="shield_user">
+                <div class="select">
+                    <span>屏蔽作者</span>
+                </div>
+                <div class="shield_list">
+                    <!-- <div class="list_item">
+                    <img src="https://tse4-mm.cn.bing.net/th/id/OIP-C._GE-48CxExYRIp91m2ei-QAAAA?w=206&h=201&c=7&r=0&o=5&pid=1.7"
+                        class="shield_user_headimg">
+                    <div class="shield_user_data">
+                        <div class="shield_user_name">红尘念心</div>
+                        <div class="shield_time">屏蔽时间:2023-08-20</div>
+                    </div>
+                    <button type="button" class="shield_state">取消屏蔽</button> -->
+                <!-- </div> -->
+            </div>
+
+        </div>
+        <div class="nav_item">
+            <div class="select">
+                <span class="select_care_tags">已关注标签</span>
+                <span class="select_all_tags">全部标签</span>
+            </div>
+            <div class="list_care_nav_hidden">
+                <div class="list_care_nav">
+                    <!-- <div class="list_nav">
+                        <div class="care_nav_data">
+                            <div class="care_nav_name">前端</div>
+                        </div>
+                        <button type="button" class="care_state_y">已关注</button>
+                        <button type="button" class="care_state_n">关注</button>
+                    </div> -->
+                </div>
+            </div>
+            <div class="list_all_nav_hidden">
+                <div class="list_all_nav">
+                    <!-- <div class="list_nav">
+                            <div class="nav_data">
+                                <div class="nav_name">前端</div>
+                            </div>
+                            <button type="button" class="care_state_y">已关注</button>
+                            <button type="button" class="care_state_n">关注</button>
+                        </div> -->
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <div class="xiaotanchuang"></div>
+    <script type="module" src="./src/ts/personalDetail.ts"></script>
+</body>
+
+</html>

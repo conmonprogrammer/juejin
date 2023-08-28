@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./public/sass/index.scss">
+    <link rel="stylesheet" href="./public/sass/articleDetail.scss">
+</head>
+
+<body>
+
+    <!-- 头部导航栏 -->
+    <div class="topnav">
+        <!-- 头部导航栏主体内容 -->
+        <div class="topnav-headers">
+            <div class="topnav-logobox">
+                <a href="./index.html"><img
+                        src="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/e08da34488b114bd4c665ba2fa520a31.svg"
+                        class="logo-img"></a>
+            </div>
+            <div class="topnav-list">
+                <div class="toplist-left">
+                    <div><a href="">首页</a></div>
+                    <div><a href="">沸点</a></div>
+                    <div><a href="">课程</a></div>
+                    <div><a href="">直播</a></div>
+                    <div><a href="">活动</a></div>
+                    <div><a href="">竞赛</a></div>
+                    <div><a href="">商城</a></div>
+                    <div><a href="">APP</a></div>
+                    <div><a href="">插件</a></div>
+                </div>
+                <div class="toplist-right">
+                    <div class="toplist-searchbox">
+                        <input type="text" class="search-input" value="探索稀土掘金">
+                        <div class="search-btn">
+                            <span class="iconfont icon-sousuo"></span>
+                        </div>
+                    </div>
+                    <div class="toplist-creatorCenterbox">
+                        <div class="creatorCenter">
+                            <button class="creatorCenterbtn">创作者中心</button>
+                        </div>
+                        <div class="toplist-more">
+                            <span class="iconfont icon-xiala"></span>
+                        </div>
+                    </div>
+                    <div class="toplist-vipbox">
+                        <div class="vipimg">
+                            <img src="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/24127194d5b158d7eaf8f09a256c5d01.svg"
+                                class="vip-img">
+                        </div>
+                        <div class="vipwords">会员</div>
+                    </div>
+                    <!-- <div class="toplist-importantNoticebox">
+                            <span class="iconfont icon-xiaoxitixing"></span>
+                        </div> -->
+                    <img src="" alt="" class="headurl">
+                    <div class="toplist-userbox">
+                        <button class="loginbtn">登录|注册</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="top" id="top"></div>
+    <div class="containner">
+        <div class="leftBox">
+            <div class="fixedBox"><img
+                    src="https://p9-passport.byteacctimg.com/img/user-avatar/9eea45a98877a249d112fe21e9d1cd51~100x100.awebp"
+                    alt="">
+                <div class="like"><span class="iconfont icon-good isgood"></span></div>
+                <div class="collect"><span class="iconfont icon-shoucang isshoucang"></span></div>
+                <div class="returntop"><a class="iconfont icon-fanhuidingbu" href="#top"></a></div>
+                <div class="collect"><span class="iconfont icon-jubao jubao"></span></div>
+            </div>
+        </div>
+        <div class="centerBox">
+            <div class="articleDetail">
+                <span class="title"></span>
+                <div class="authorTime">
+                    <span class="username"></span>
+                    <span class="publishTime"></span>
+                </div>
+                <div class="content">
+                </div>
+                <span class="tags"><span>标签：</span><span class="tag"></span></span>
+            </div>
+            <div class="PublishDiscuss">
+                <div class="publishBox">
+                    <div class="publishDis">
+                        <span><strong>评论</strong></span>
+                        <div class="publish">
+                            <img src="https://p3-passport.byteacctimg.com/img/user-avatar/91b2a8e6c3ea19126742ecc5a39aa3ca~90x90.awebp"
+                                alt="" class="headurl">
+                            <textarea name="pubContent" id="" class="pubContent" placeholder="输入评论"></textarea>
+                        </div>
+                        <div class="publishButton">发布评论</div>
+                    </div>
+                </div>
+                <div class="discussBox">
+                    <span class="discussSpan"><strong>热门评论</strong><img src="./public/images/fire.png" alt=""></span>
+                    <div class="discusses">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="rightBox">
+            <div class="content">
+                <div class="personal">
+                    <div class="headurlName">
+                        <img src="https://p3-passport.byteacctimg.com/img/user-avatar/91b2a8e6c3ea19126742ecc5a39aa3ca~90x90.awebp"
+                            alt="" class="headurl">
+                        <div class="usernameJob">
+                            <span class="username"></span>
+                            <span class="job">服务端开发工程师</span>
+                        </div>
+                    </div>
+                    <div class="careTalk">
+                        <div class="care isCare">关注</div>
+                        <div class="haveCare isCare">已关注</div>
+                        <div class="talk">私信</div>
+                    </div>
+                    <div class="count">
+                        <div class="circle"><span class="iconfont icon-dianzan"></span></div>获得点赞<span
+                            class="likecount"></span>
+                    </div>
+                    <div class="br"></div>
+                </div>
+                <div class="articles">
+                    <span>相关文章</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tanchuang">
+        <span><strong>举报理由是什么呢???</strong></span>
+        <textarea name="" id="" cols="30" rows="10" placeholder="请输入举报理由字数20字以内" class="jubaoliyou"></textarea>
+        <button class="tijiaojubao">提交举报</button>
+    </div>
+    <div class="topnav">
+
+
+    <div class="xiaotanchuang"></div>
+        <script type="module" src="./src/ts/artilceDetail.ts"></script>
+</body>
+
+</html>
